@@ -1,0 +1,8 @@
+Frontstream\scripts\MyTestCase.class
+com\selenium\project\pages\bfg\dbsHomePage.class
+com\selenium\project\pages\bfg\cmLoginPage.class
+com\selenium\project\pages\bfg\cmHomePage.class
+TD\scripts\TD_BecomeClient.class
+Frontstream\scripts\CMVerifyCampaignName.class
+Frontstream\scripts\CMAdminLogin.class
+TD\pages\TDBecomeClientPage.class

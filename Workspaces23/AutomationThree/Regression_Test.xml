@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="GTAF" parallel= "false" thread-count="2" preserve-order="true" configfailurepolicy="continue">
+
+  	 <groups>
+   		 <run>
+   		 	<include name="initGroup"/>
+    	</run>
+  	 </groups>
+  	 
+	 <listeners>
+		<listener class-name = "org.uncommons.reportng.HTMLReporter"/>	
+		<listener class-name = "org.uncommons.reportng.JUnitXMLReporter"/>			
+	</listeners> 
+
+
+	 	<!--  For Web -->
+	 	
+	 	   <test name="FrontStream-Edge" >
+	
+	 <parameter name="automationName" value="Selenium" />	 
+	 <parameter name="browser" value="edge"/>
+	 <parameter name="browserVersion" value="25"/>	
+	 <parameter name="platformName" value="Windows 10" />  
+	 <parameter name = "environment" value = "jenkins"/>
+	 <parameter name="nodeUrl" value="" />
+	  <groups>
+   		 <run>
+   		 	<include name="regression"/>
+   		 	
+    	</run>
+  	 </groups>
+	 	 <classes>
+				<class name="Frontstream.executer.DynamicScriptExecuter" />			
+		</classes>
+	 </test>  
+	 
+	   <test name="FrontStream-Firefox" >
+	
+	 <parameter name="automationName" value="Selenium" />	 
+	 <parameter name="browser" value="firefox"/>
+	 <parameter name="browserVersion" value="33"/>	
+	 <parameter name="platformName" value="Windows 7" />  
+	 <parameter name = "environment" value = "jenkins"/>
+	 <parameter name="nodeUrl" value="" />
+	  <groups>
+   		 <run>
+   		 	<include name="regression"/>
+   		 	
+    	</run>
+  	 </groups>
+	  
+	 	 <classes>
+	
+	 		<class name="Frontstream.executer.DynamicScriptExecuter" />			
+		</classes>
+	 </test>   
+	 
+  <test name="FrontStream-Chrome" >
+	
+	 <parameter name="automationName" value="Selenium" />	 
+	 <parameter name="browser" value="chrome"/>
+	 <parameter name="browserVersion" value="46"/>	
+	 <parameter name="platformName" value="Windows 7" />  
+	 <parameter name = "environment" value = "jenkins"/>
+	 <parameter name="nodeUrl" value="" />
+	   <groups>
+   		 <run>
+   		 	<include name="regression"/>
+   		 
+    	</run>
+  	 </groups>
+	 	 <classes>
+				<class name="Frontstream.executer.DynamicScriptExecuter" />			
+		</classes>
+	 </test>  
+	 
+	 <test name="FrontStream-IE-11" >
+	
+	 <parameter name="automationName" value="Selenium" />	 
+	 <parameter name="browser" value="ie"/>
+	 <parameter name="browserVersion" value="11"/>	
+	 <parameter name="platformName" value="Windows 7" />  
+	 <parameter name = "environment" value = "jenkins"/>
+	 <parameter name="nodeUrl" value="" />
+	   <groups>
+   		 <run>
+   		 	<include name="regression"/>
+   		 	
+    	</run>
+  	 </groups>
+	 	 <classes>
+				<class name="Frontstream.executer.DynamicScriptExecuter" />			
+		</classes>
+	 </test> 
+	  <test name="FrontStream-IE-9" >
+	
+	 <parameter name="automationName" value="Selenium" />	 
+	 <parameter name="browser" value="ie"/>
+	 <parameter name="browserVersion" value="9"/>	
+	 <parameter name="platformName" value="Windows 7" />  
+	 <parameter name = "environment" value = "jenkins"/>
+	 <parameter name="nodeUrl" value="" />
+	   <groups>
+   		 <run> 
+   		 	<include name="regression"/>
+   		 
+    	</run>
+  	 </groups>
+	 	 <classes>
+				<class name="Frontstream.executer.DynamicScriptExecuter" />			
+		</classes>
+	 </test> 
+	   <test name="FrontStream-IE-10" >
+	
+	 <parameter name="automationName" value="Selenium" />	 
+	 <parameter name="browser" value="ie"/>
+	 <parameter name="browserVersion" value="10"/>	
+	 <parameter name="platformName" value="Windows 7" />  
+	 <parameter name = "environment" value = "jenkins"/>
+	 <parameter name="nodeUrl" value="" />
+	   <groups>
+   		 <run> 
+   		 	<include name="regression"/>
+   		 
+    	</run>
+  	 </groups>
+	 	 <classes>
+				<class name="Frontstream.executer.DynamicScriptExecuter" />			
+		</classes>
+	 </test>
+	<test name="FrontStream-safari" >
+	
+	 <parameter name="automationName" value="Selenium" />	 
+	 <parameter name="browser" value="safari"/>
+	 <parameter name="browserVersion" value="5.1"/>	
+	 <parameter name="platformName" value="Windows 7" />  
+	 <parameter name = "environment" value = "jenkins"/>
+	 <parameter name="nodeUrl" value="" />
+	   <groups>
+   		 <run>
+   		 	<include name="regression"/>
+   		 	
+    	</run>
+  	 </groups>
+	 	 <classes>
+				<class name="Frontstream.executer.DynamicScriptExecuter" />			
+		</classes>
+	 </test> 
+	 	<test name="FrontStream-safari-mac" >
+	
+	 <parameter name="automationName" value="Selenium" />	 
+	 <parameter name="browser" value="safari"/>
+	 <parameter name="browserVersion" value="8.0"/>	
+	 <parameter name="platformName" value="mac" />  
+	 <parameter name = "environment" value = "jenkins"/>
+	 <parameter name="nodeUrl" value="" />
+	   <groups>
+   		 <run>
+   		 	<include name="regression"/>
+   		 	
+    	</run>
+  	 </groups>
+	 	 <classes>
+				<class name="Frontstream.executer.DynamicScriptExecuter" />			
+		</classes>
+	 </test> 
+
+</suite>

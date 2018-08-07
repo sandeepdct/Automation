@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [GTAF]">
+  <parameter name="environment" value="local"/>
+  <parameter name="browser" value="edge"/>
+  <parameter name="browserVersion" value="15"/>
+  <parameter name="automationName" value="Selenium"/>
+  <parameter name="nodeUrl" value=""/>
+  <parameter name="platformName" value="Windows 10"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="FrontStream-Edge(failed)">
+    <parameter name="environment" value="local"/>
+    <parameter name="browser" value="edge"/>
+    <parameter name="browserVersion" value="15"/>
+    <parameter name="automationName" value="Selenium"/>
+    <parameter name="nodeUrl" value=""/>
+    <parameter name="platformName" value="Windows 10"/>
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TD.scripts.TD_BecomeClient">
+        <methods>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
+          <include name="SubmitBecomeClient"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- TD.scripts.TD_BecomeClient -->
+    </classes>
+  </test> <!-- FrontStream-Edge(failed) -->
+</suite> <!-- Failed suite [GTAF] -->

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="GTAF" duration-ms="104548" started-at="2017-11-29T12:51:22Z" finished-at="2017-11-29T12:53:07Z">
+    <groups>
+      <group name="regression">
+        <method signature="TD_BecomeClient.SubmitBecomeClient(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TD.scripts.TD_BecomeClient@4116aac9]" name="SubmitBecomeClient" class="TD.scripts.TD_BecomeClient"/>
+      </group> <!-- regression -->
+    </groups>
+    <test name="FrontStream-Chrome" duration-ms="104548" started-at="2017-11-29T12:51:22Z" finished-at="2017-11-29T12:53:07Z">
+      <class name="TD.scripts.TD_BecomeClient">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TD.scripts.TD_BecomeClient@4116aac9]" name="beforeClass" is-config="true" duration-ms="24525" depends-on-groups="initGroup" started-at="2017-11-29T07:51:22Z" finished-at="2017-11-29T07:51:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Selenium]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[61]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:TD.scripts.TD_BecomeClient@4116aac9]" name="beforeMethod" is-config="true" duration-ms="90" started-at="2017-11-29T07:51:47Z" finished-at="2017-11-29T07:51:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TD.scripts.TD_BecomeClient.SubmitBecomeClient(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Throwable]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="SubmitBecomeClient(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TD.scripts.TD_BecomeClient@4116aac9]" name="SubmitBecomeClient" duration-ms="76623" started-at="2017-11-29T07:51:47Z" data-provider="BecomeClientData" finished-at="2017-11-29T07:53:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sandeep]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Vadarale]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[QA]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[DCT]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[sandeep.vadarale@dctinc.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[9.119119911E9]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Test]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Thank your for contacting us, our team will reach out to you shortly.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubmitBecomeClient -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TD.scripts.TD_BecomeClient@4116aac9]" name="afterMethod" is-config="true" duration-ms="71" started-at="2017-11-29T07:53:03Z" finished-at="2017-11-29T07:53:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="afterClass()[pri:0, instance:TD.scripts.TD_BecomeClient@4116aac9]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-11-29T07:53:03Z" finished-at="2017-11-29T07:53:03Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.automation.accelerators.TestEngineWeb.afterClass(TestEngineWeb.java:241)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:220)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- TD.scripts.TD_BecomeClient -->
+    </test> <!-- FrontStream-Chrome -->
+  </suite> <!-- GTAF -->
+</testng-results>

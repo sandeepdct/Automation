@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.testng.eclipse.launchconfig">
+<listAttribute key="org.eclipse.debug.ui.favoriteGroups">
+<listEntry value="org.eclipse.debug.ui.launchGroup.run"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.m2e.launchconfig.classpathProvider"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.testng.remote.RemoteTestNG"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="AutomationThree"/>
+<stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
+<mapAttribute key="org.testng.eclipse.ALL_CLASS_METHODS">
+<mapEntry key="Frontstream.framework.ExcelReadUtilPoi" value=""/>
+<mapEntry key="Frontstream.framework.GetExcutionClass" value=""/>
+<mapEntry key="Frontstream.scripts.CMAdminLogin" value=""/>
+<mapEntry key="Frontstream.scripts.CMVerifyCampaignName" value=""/>
+<mapEntry key="Frontstream.scripts.MyTestCase" value=""/>
+<mapEntry key="TD.pages.TDBecomeClientPage" value=""/>
+<mapEntry key="TD.scripts.TD_BecomeClient" value=""/>
+<mapEntry key="com.automation.accelerators.ActionEngine" value=""/>
+<mapEntry key="com.automation.accelerators.TestEngineWeb" value=""/>
+<mapEntry key="com.automation.dataDriver.DataTable" value=""/>
+<mapEntry key="com.automation.dataDriver.ExcelFileReadWrite" value=""/>
+<mapEntry key="com.automation.report.BrowserContext" value=""/>
+<mapEntry key="com.automation.report.CReporter" value=""/>
+<mapEntry key="com.automation.report.ConfigFileReadWrite" value=""/>
+<mapEntry key="com.automation.report.ReporterConstants" value=""/>
+<mapEntry key="com.automation.report.TestResult" value=""/>
+<mapEntry key="com.automation.support.ExcelReader" value=""/>
+<mapEntry key="com.automation.support.ExceptionHandler" value=""/>
+<mapEntry key="com.automation.support.IFrameworkConstant" value=""/>
+<mapEntry key="com.automation.utilities.ReadMail" value=""/>
+<mapEntry key="com.automation.utilities.Zip" value=""/>
+<mapEntry key="com.selenium.project.pages.bfg.cmHomePage" value=""/>
+<mapEntry key="com.selenium.project.pages.bfg.cmLoginPage" value=""/>
+<mapEntry key="com.selenium.project.pages.bfg.dbsHomePage" value=""/>
+</mapAttribute>
+<listAttribute key="org.testng.eclipse.CLASS_TEST_LIST">
+<listEntry value="com.automation.utilities.ReadMail"/>
+<listEntry value="com.automation.support.ExceptionHandler"/>
+<listEntry value="com.selenium.project.pages.bfg.cmHomePage"/>
+<listEntry value="com.automation.utilities.Zip"/>
+<listEntry value="com.automation.report.CReporter"/>
+<listEntry value="com.automation.report.TestResult"/>
+<listEntry value="com.automation.accelerators.ActionEngine"/>
+<listEntry value="com.automation.dataDriver.DataTable"/>
+<listEntry value="com.selenium.project.pages.bfg.dbsHomePage"/>
+<listEntry value="Frontstream.scripts.CMVerifyCampaignName"/>
+<listEntry value="TD.pages.TDBecomeClientPage"/>
+<listEntry value="Frontstream.scripts.MyTestCase"/>
+<listEntry value="com.automation.accelerators.TestEngineWeb"/>
+<listEntry value="com.automation.dataDriver.ExcelFileReadWrite"/>
+<listEntry value="com.automation.support.ExcelReader"/>
+<listEntry value="com.automation.report.ConfigFileReadWrite"/>
+<listEntry value="com.automation.support.IFrameworkConstant"/>
+<listEntry value="Frontstream.framework.GetExcutionClass"/>
+<listEntry value="com.selenium.project.pages.bfg.cmLoginPage"/>
+<listEntry value="com.automation.report.ReporterConstants"/>
+<listEntry value="TD.scripts.TD_BecomeClient"/>
+<listEntry value="Frontstream.scripts.CMAdminLogin"/>
+<listEntry value="Frontstream.framework.ExcelReadUtilPoi"/>
+<listEntry value="com.automation.report.BrowserContext"/>
+</listAttribute>
+<booleanAttribute key="org.testng.eclipse.DEBUG" value="false"/>
+<listAttribute key="org.testng.eclipse.GROUP_LIST"/>
+<listAttribute key="org.testng.eclipse.GROUP_LIST_CLASS"/>
+<stringAttribute key="org.testng.eclipse.LOG_LEVEL" value="2"/>
+<listAttribute key="org.testng.eclipse.METHOD_TEST_LIST"/>
+<listAttribute key="org.testng.eclipse.PACKAGE_TEST_LIST"/>
+<stringAttribute key="org.testng.eclipse.PRE_DEFINED_LISTENERS" value=""/>
+<stringAttribute key="org.testng.eclipse.PROTOCOL" value="json"/>
+<intAttribute key="org.testng.eclipse.TYPE" value="1"/>
+<booleanAttribute key="org.testng.eclipse.VERBOSE" value="false"/>
+</launchConfiguration>

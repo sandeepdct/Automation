@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="GTAF" parallel= "false" thread-count="10" preserve-order="true">	
+
+	 <listeners>
+		<listener class-name = "org.uncommons.reportng.HTMLReporter"/>	
+		<listener class-name = "org.uncommons.reportng.JUnitXMLReporter"/>			
+	</listeners> 
+	
+
+	 <!--  	
+     <test name="FrontStream-Firefox" >
+	
+	 <parameter name="automationName" value="Selenium" />	 
+	 <parameter name="browser" value="firefox"/>
+	 <parameter name="browserVersion" value="55"/>	
+	 <parameter name="platformName" value="Windows 10" />  
+	 <parameter name = "environment" value = "local"/>
+	 <parameter name="nodeUrl" value="" />
+	 	 <classes>
+				<class name="Frontstream.scripts.CMAdminLogin" />			
+		</classes>
+	 </test>
+	 -->
+	 
+	    
+	 <test name="FrontStream-Chrome" >
+	
+	 <parameter name="automationName" value="Selenium" />	 
+	 <parameter name="browser" value="chrome"/>
+	 <parameter name="browserVersion" value="61"/>	
+	 <parameter name="platformName" value="Windows 10" />  
+	 <parameter name = "environment" value ="local"/>
+	 <parameter name="nodeUrl" value="" />
+	  <groups>
+   		 <run>
+   		 	<include name="regression"/>
+    	</run>
+  	 </groups>
+	 	 <classes>
+			<class name="TD.scripts.TD_BecomeClient" />	
+		</classes>
+	 </test> 
+	
+	<!-- 
+	<test name="FrontStream-Edge" >
+	
+	 <parameter name="automationName" value="Selenium" />	 
+	 <parameter name="browser" value="edge"/>
+	 <parameter name="browserVersion" value="15"/>	
+	 <parameter name="platformName" value="Windows 10" />  
+	 <parameter name = "environment" value ="local"/>
+	 <parameter name="nodeUrl" value="" />
+	  <groups>
+   		 <run>
+   		 	<include name="regression"/>
+    	</run>
+  	 </groups>
+	 	 <classes>
+				 <class name="TD.scripts.TD_BecomeClient"></class>
+				<class name="TD.scripts.SSOTest"></class>
+			   							
+		</classes>
+	 </test>
+	-->
+	
+	<!--  <test name="FrontStream-IE-11" >
+	
+	 <parameter name="automationName" value="Selenium" />	 
+	 <parameter name="browser" value="ie"/>
+	 <parameter name="browserVersion" value="11"/>	
+	 <parameter name="platformName" value="Windows 7" />  
+	 <parameter name = "environment" value = "jenkins"/>
+	 <parameter name="nodeUrl" value="" />
+	 	 <classes>
+				<class name="Frontstream.executer.DynamicScriptExecuter" />			
+		</classes>
+	 </test> 
+	 
+	  <test name="FrontStream-IE-9" >
+	
+	 <parameter name="automationName" value="Selenium" />	 
+	 <parameter name="browser" value="ie"/>
+	 <parameter name="browserVersion" value="9"/>	
+	 <parameter name="platformName" value="Windows 7" />  
+	 <parameter name = "environment" value = "jenkins"/>
+	 <parameter name="nodeUrl" value="" />
+	 	 <classes>
+				<class name="Frontstream.executer.DynamicScriptExecuter" />			
+		</classes>
+	 </test> 
+	<test name="FrontStream-safari" >
+	
+	 <parameter name="automationName" value="Selenium" />	 
+	 <parameter name="browser" value="safari"/>
+	 <parameter name="browserVersion" value="5.1"/>	
+	 <parameter name="platformName" value="Windows 7" />  
+	 <parameter name = "environment" value = "jenkins"/>
+	 <parameter name="nodeUrl" value="" />
+	 	 <classes>
+				<class name="Frontstream.executer.DynamicScriptExecuter" />			
+		</classes>
+	 </test> -->
+	 
+</suite>

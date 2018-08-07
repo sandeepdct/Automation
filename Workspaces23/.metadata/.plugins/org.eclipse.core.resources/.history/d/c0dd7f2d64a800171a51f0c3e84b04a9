@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="Frontstream.scripts.CMVerifyCampaignName"/>
+      <class name="com.automation.report.CReporter"/>
+      <class name="Frontstream.scripts.MyTestCase"/>
+      <class name="TD.scripts.TD_BecomeClient"/>
+      <class name="Frontstream.scripts.CMAdminLogin"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
